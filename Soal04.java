@@ -10,12 +10,9 @@ public class Soal04 {
         double tunjangan = 0;
 
         // Input kode posisi karyawan
-        System.out.println("Masukkan kode posisi karyawan (DES/PRG/WRT/MKT):");
         String kodePosisi = scanner.nextLine();
         
         // Input jumlah jam kerja
-        System.out.println("Masukkan jumlah jam kerja dalam sebulan:");
-        
         // Pastikan input jam kerja adalah integer
         int jamKerja = 0;
         if (scanner.hasNextInt()) {

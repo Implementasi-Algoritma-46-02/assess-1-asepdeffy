@@ -5,23 +5,14 @@ public class Soal04 {
 	public static void main(final String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-        // Honor per jam dan tunjangan per pekerjaan
+        // Honor per jam
         final double HONOR_PER_JAM = 30000;
         double tunjangan = 0;
 
         // Input kode posisi karyawan
         String kodePosisi = scanner.nextLine();
-        
         // Input jumlah jam kerja
-        // Pastikan input jam kerja adalah integer
-        int jamKerja = 0;
-        if (scanner.hasNextInt()) {
-            jamKerja = scanner.nextInt();
-        } else {
-            System.out.println("Input jam kerja tidak valid. Harap masukkan angka.");
-            scanner.close();
-            return; // Menghentikan program jika jam kerja tidak valid
-        }
+        int jamKerja = scanner.nextInt();
 
         // Menentukan tunjangan berdasarkan kode pekerjaan
         switch (kodePosisi) {

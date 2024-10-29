@@ -5,7 +5,6 @@ public class Soal01 {
 	public static void main(final String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Masukkan enam nomor ID yang masing-masing terdiri dari tiga digit:");
         String id1 = scanner.next();
         String id2 = scanner.next();
         String id3 = scanner.next();

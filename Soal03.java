@@ -6,7 +6,6 @@ public class Soal03 {
 		Scanner scanner = new Scanner(System.in);
 
         // Input jam, menit, dan tambahan menit
-        System.out.println("Masukkan jam, menit, dan tambahan menit (pisahkan dengan spasi):");
         int H = scanner.nextInt();
         int M = scanner.nextInt();
         int V = scanner.nextInt();

@@ -6,12 +6,10 @@ public class Soal02 {
 		Scanner scanner = new Scanner(System.in);
 
         // Input baris pertama untuk masa studi dan IPK
-        System.out.println("Masukkan masa studi dan nilai IPK (pisahkan dengan spasi):");
         double masaStudi = scanner.nextDouble();
         double ipk = scanner.nextDouble();
 
         // Input baris kedua untuk nilai EPRT, status HKI, dan status lomba internasional
-        System.out.println("Masukkan nilai EPRT, status HKI (ada/tidak), dan status lomba internasional (ada/tidak):");
         int eprt = scanner.nextInt();
         String hki = scanner.next();
         String lomba = scanner.next();

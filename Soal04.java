@@ -10,9 +10,9 @@ public class Soal04 {
         double tunjangan = 0;
 
         // Input kode posisi karyawan
-        String kodePosisi = scanner.nextLine();
+        String kodePosisi = scanner.nextLine().trim();
         // Input jumlah jam kerja
-        int jamKerja = scanner.nextInt();
+        int jamKerja = 0;
 
         // Menentukan tunjangan berdasarkan kode pekerjaan
         switch (kodePosisi) {

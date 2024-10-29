@@ -25,7 +25,7 @@ public class Soal02 {
         if (tepatWaktu && ipkMemenuhi && eprtMemenuhi && (hkiMemenuhi || lombaMemenuhi)) {
             System.out.println("Cumlaude");
         } else {
-            System.out.println("Tidak cumlaude");
+            System.out.println("Tidak Cumlaude");
         }
 
         scanner.close();

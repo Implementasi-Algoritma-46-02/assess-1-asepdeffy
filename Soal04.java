@@ -5,15 +5,16 @@ public class Soal04 {
 	public static void main(final String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-        // Honor per jam
+        // Honor per jam dan tunjangan per pekerjaan
         final double HONOR_PER_JAM = 30000;
         double tunjangan = 0;
 
-        // Input kode posisi karyawan dan jam kerja
-        String input = scanner.nextLine().trim();
-        String[] parts = input.split(" ");
-        String kodePosisi = parts[0];
-        int jamKerja = Integer.parseInt(parts[1]);
+        // Input kode posisi karyawan
+        String kodePosisi = scanner.next();
+        
+        // Input jumlah jam kerja
+        System.out.println("Masukkan jumlah jam kerja dalam sebulan:");
+        int jamKerja = scanner.nextInt();
 
         // Menentukan tunjangan berdasarkan kode pekerjaan
         switch (kodePosisi) {

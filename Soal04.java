@@ -9,9 +9,12 @@ public class Soal04 {
         final double HONOR_PER_JAM = 30000;
         double tunjangan = 0;
 
-        // Input kode pekerjaan dan jam kerja
-        System.out.println("Masukkan kode posisi karyawan dan jumlah jam kerja dalam sebulan (pisahkan dengan spasi):");
-        String kodePosisi = scanner.next();
+        // Input kode posisi karyawan
+        System.out.println("Masukkan kode posisi karyawan (DES/PRG/WRT/MKT):");
+        String kodePosisi = scanner.nextLine();
+        
+        // Input jumlah jam kerja
+        System.out.println("Masukkan jumlah jam kerja dalam sebulan:");
         int jamKerja = scanner.nextInt();
 
         // Menentukan tunjangan berdasarkan kode pekerjaan
@@ -40,9 +43,9 @@ public class Soal04 {
         // Menghitung bonus
         double bonus = 0;
         if (jamKerja > 175) {
-            bonus = honorDasar * 0.07; // Bonus 7%
+            bonus = (jamKerja * HONOR_PER_JAM) * 0.07; // Bonus 7% dari honor per jam
         } else if (jamKerja > 160) {
-            bonus = honorDasar * 0.05; // Bonus 5%
+            bonus = (jamKerja * HONOR_PER_JAM) * 0.05; // Bonus 5% dari honor per jam
         }
 
         // Total honor

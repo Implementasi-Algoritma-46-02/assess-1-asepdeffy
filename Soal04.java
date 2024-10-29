@@ -9,10 +9,11 @@ public class Soal04 {
         final double HONOR_PER_JAM = 30000;
         double tunjangan = 0;
 
-        // Input kode posisi karyawan
-        String kodePosisi = scanner.nextLine();
-        // Input jumlah jam kerja
-        int jamKerja = scanner.nextInt();
+        // Input kode posisi karyawan dan jam kerja
+        String input = scanner.nextLine().trim();
+        String[] parts = input.split(" ");
+        String kodePosisi = parts[0];
+        int jamKerja = Integer.parseInt(parts[1]);
 
         // Menentukan tunjangan berdasarkan kode pekerjaan
         switch (kodePosisi) {
